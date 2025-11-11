@@ -6,6 +6,11 @@ import React from "react";
 const PRIMARY_PURPLE = "#6B46C1";
 const LIGHT_BANNER_BG = "#F8F7F2";
 
+interface ChecklistItemProps {
+  children: React.ReactNode; // Defines children as valid React content
+  isBold?: boolean;
+}
+
 // Inline SVG for the checklist bullet/icon
 const CheckmarkIcon = ({ className = "w-5 h-5" }) => (
   <svg
@@ -24,7 +29,10 @@ const CheckmarkIcon = ({ className = "w-5 h-5" }) => (
 );
 
 // Component for a checklist item, using the custom SVG
-const ChecklistItem = ({ children, isBold = false }) => (
+const ChecklistItem: React.FC<ChecklistItemProps> = ({
+  children,
+  isBold = false,
+}) => (
   <li
     className={`flex items-start space-x-3 text-gray-700 ${
       isBold ? "font-semibold" : "font-normal"
