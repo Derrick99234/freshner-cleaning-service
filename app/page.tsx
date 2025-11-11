@@ -76,7 +76,7 @@ export default function Home() {
             className="text-4xl md:text-5xl font-extrabold tracking-tight"
             style={{ color: PRIMARY_PURPLE }}
           >
-            FRESHER CLEANING SERVICE
+            FRESHNER CLEANING SERVICES
           </h1>
 
           {/* Tagline */}
@@ -124,7 +124,7 @@ export default function Home() {
 
           {/* Description Text */}
           <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            FRESHER CLEANING SERVICE offers a flexible and customized maid
+            FRESHNER CLEANING SERVICES offers a flexible and customized maid
             service at an affordable price, based on a free, no-obligation,
             in-home estimate. Professionally trained, bonded and insured staff
             work in teams of two to efficiently clean your home. They arrive in

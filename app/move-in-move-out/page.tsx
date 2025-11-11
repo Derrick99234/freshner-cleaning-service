@@ -59,7 +59,7 @@ export default function MoveInMoveOutPage() {
               className="text-xl font-medium"
               style={{ color: PRIMARY_PURPLE }}
             >
-              MAIDS PARADE
+              Freshner Cleaning Service
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               Move out and Move in Cleaning Service

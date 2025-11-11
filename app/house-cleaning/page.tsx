@@ -118,7 +118,7 @@ export default function HouseCleaningPage() {
               className="text-xl font-medium"
               style={{ color: PRIMARY_PURPLE }}
             >
-              FRESHER CLEANING SERVICE
+              Freshner Cleaning Service
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               House Cleaning
@@ -184,8 +184,9 @@ export default function HouseCleaningPage() {
           {/* Disclaimer text below the checklist */}
           <div className="mt-10 max-w-4xl mx-auto text-center">
             <p className="text-sm text-gray-500 italic">
-              Maids Parade uses scrub brushes on faucets, shower backs, drains,
-              window sills, baseboards and cabinet doors (on request).
+              Freshner Cleaning Service uses scrub brushes on faucets, shower
+              backs, drains, window sills, baseboards and cabinet doors (on
+              request).
             </p>
             <p className="text-sm text-gray-500 italic mt-2">
               Kitchen, bathroom and entrance floor areas are mopped. All other

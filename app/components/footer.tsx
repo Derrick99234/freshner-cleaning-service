@@ -22,7 +22,7 @@ function Footer() {
                 className="text-xl font-bold tracking-wider"
                 style={{ color: PRIMARY_PURPLE }}
               >
-                FRESHER CLEANING SERVICE
+                Freshner Cleaning Service
               </p>
             </div>
             <p className="text-gray-400 mb-2">

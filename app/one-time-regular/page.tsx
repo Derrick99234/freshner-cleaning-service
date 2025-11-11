@@ -78,7 +78,8 @@ const EstimateCTA = () => {
             Do you need an estimate of your full house?
           </p>
           <p className="text-gray-600 mb-8 leading-relaxed">
-            MAIDS PARADE will provide you an ease and affordable price
+            Freshner Cleaning Service will provide you an ease and affordable
+            price
           </p>
           <button
             className="py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
@@ -127,7 +128,7 @@ export default function CompleteHouseCleaningPage() {
               className="text-xl font-medium"
               style={{ color: PRIMARY_PURPLE }}
             >
-              MAIDS PARADE
+              Freshner Cleaning Service
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               Complete House Cleaning

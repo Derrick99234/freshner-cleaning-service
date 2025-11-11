@@ -58,7 +58,7 @@ export default function AddonsPage() {
       >
         <div className="max-w-7xl mx-auto text-center sm:text-left">
           <p className="text-xl font-medium" style={{ color: PRIMARY_PURPLE }}>
-            MAIDS PARADE
+            Freshner Cleaning Service
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
             Add ons and Special request
@@ -105,12 +105,12 @@ export default function AddonsPage() {
         </div>
       </section>
 
-      {/* Maids Parade Add-ons Checklist Section */}
+      {/* Freshner Cleaning Service Add-ons Checklist Section */}
       <section className="pb-16 md:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-8 md:p-12">
             <h4 className="text-2xl font-bold text-gray-800 mb-8 text-center">
-              Maids Parade Add-ons Checklist
+              Freshner Cleaning Service Add-ons Checklist
             </h4>
 
             <ul className="space-y-4">

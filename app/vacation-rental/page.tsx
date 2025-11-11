@@ -52,7 +52,8 @@ const EstimateCTA = () => {
               Do you need an estimate of your full house?
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              MAIDS PARADE will provide you an ease and affordable price
+              Freshner Cleaning Service will provide you an ease and affordable
+              price
             </p>
             <button
               className="py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
@@ -157,7 +158,7 @@ export default function VacationRentalCleaningPage() {
               className="text-xl font-medium"
               style={{ color: PRIMARY_PURPLE }}
             >
-              MAIDS PARADE
+              Freshner Cleaning Service
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               Vacation Rental
@@ -180,13 +181,13 @@ export default function VacationRentalCleaningPage() {
                 Vacation Rental
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Maids Parade teams will clean your rental property thoroughly.
-                Our service is based on your specific needs, and we do not use
-                any cleaning products. We’ll clean, sanitize, and prepare your
-                place for your next guest. Let us help you keep your place
-                beautiful and functional. Our staff work in teams of two to
-                efficiently deliver cleaning services and maid services for your
-                vacation rental cleaning services.
+                Freshner Cleaning Service teams will clean your rental property
+                thoroughly. Our service is based on your specific needs, and we
+                do not use any cleaning products. We’ll clean, sanitize, and
+                prepare your place for your next guest. Let us help you keep
+                your place beautiful and functional. Our staff work in teams of
+                two to efficiently deliver cleaning services and maid services
+                for your vacation rental cleaning services.
               </p>
               <button className="py-3 px-6 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500">
                 Book A Cleaning

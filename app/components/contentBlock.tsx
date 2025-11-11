@@ -21,7 +21,7 @@ export default function ContentBlock() {
               rambunctious kids, there&apos;s not always enough time to maintain
               that sparkling level of clean you&apos;d like. The housekeepers at{" "}
               <strong style={PRIMARY_PURPLE_STYLE}>
-                Fresher Cleaning Service
+                Freshner Cleaning Service
               </strong>{" "}
               are your solution.
             </p>
