@@ -1,10 +1,10 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 // The 'next/image' import has been removed to resolve the build error.
 
 // Define the custom colors used in the original design for clarity
 const PRIMARY_PURPLE = "#6B46C1";
-const LIGHT_BANNER_BG = "#F8F7F2";
+const SECONDARY_BG = "#F0EBE9";
 
 interface ChecklistItemProps {
   children: React.ReactNode; // Defines children as valid React content
@@ -45,60 +45,32 @@ const ChecklistItem: React.FC<ChecklistItemProps> = ({
   </li>
 );
 
-const AddonsPage = () => {
-  // Note: Standard <img> tags are used here with explicit width/height
-  // and Tailwind object-cover to maintain the desired layout performance
-  // without requiring the unavailable 'next/image' component.
-
+export default function AddonsPage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* Custom styles for colors and shadow using Tailwind arbitrary values for fidelity */}
-      <style jsx global>{`
-        .text-primary-purple {
-          color: ${PRIMARY_PURPLE};
-        }
-        .bg-primary-purple {
-          background-color: ${PRIMARY_PURPLE};
-        }
-        .bg-banner-light {
-          background-color: ${LIGHT_BANNER_BG};
-        }
-        .button-shadow {
-          box-shadow: 0 4px 6px -1px rgba(107, 70, 193, 0.4),
-            0 2px 4px -1px rgba(107, 70, 193, 0.2);
-        }
-      `}</style>
-
       {/* Hero Banner Section (Page Title) */}
-      <header className="bg-banner-light h-64 md:h-80 flex items-center relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
-          <h1 className="text-2xl sm:text-3xl font-light text-primary-purple uppercase tracking-widest">
+      <div
+        className="w-full py-16 sm:py-24 px-4 bg-cover bg-center"
+        style={{
+          backgroundColor: SECONDARY_BG,
+          backgroundImage: `url('https://cdn.pixabay.com/photo/2016/11/19/00/17/broom-1837434_640.jpg')`,
+        }}
+      >
+        <div className="max-w-7xl mx-auto text-center sm:text-left">
+          <p className="text-xl font-medium" style={{ color: PRIMARY_PURPLE }}>
             MAIDS PARADE
-          </h1>
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 mt-2">
+          </p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
             Add ons and Special request
-          </h2>
-          <button className="mt-6 px-6 py-3 bg-primary-purple text-white font-semibold rounded shadow-lg hover:opacity-90 transition button-shadow">
+          </h1>
+          <button
+            className="mt-6 py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
+            style={{ backgroundColor: PRIMARY_PURPLE }}
+          >
             Book A Cleaning
           </button>
         </div>
-        {/* Background element using standard <img> */}
-        <Image
-          src={`https://placehold.co/800x600/${PRIMARY_PURPLE.substring(
-            1
-          )}/FFFFFF?text=Cleaning+Supplies`}
-          alt="Cleaning products background graphic"
-          width={800} // Explicit width to reserve space
-          height={600} // Explicit height to reserve space
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-          }}
-          className="object-cover opacity-20 mix-blend-multiply"
-        />
-      </header>
+      </div>
 
       {/* Main Content Section */}
       <section className="py-16 md:py-20">
@@ -122,9 +94,7 @@ const AddonsPage = () => {
             {/* Image Placeholder using standard <img> */}
             <div className="rounded-xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
-                src={`https://placehold.co/600x400/${PRIMARY_PURPLE.substring(
-                  1
-                )}/FFFFFF?text=Clean+Interior`}
+                src={`https://cdn.pixabay.com/photo/2016/11/19/00/17/broom-1837434_640.jpg`}
                 alt="A clean, organized room interior."
                 width={600} // Explicit width
                 height={400} // Explicit height
@@ -180,9 +150,7 @@ const AddonsPage = () => {
             {/* Image Placeholder for Laundry (Second on mobile, first on desktop) */}
             <div className="rounded-xl overflow-hidden shadow-2xl order-first lg:order-last">
               <Image
-                src={`https://placehold.co/600x400/${PRIMARY_PURPLE.substring(
-                  1
-                )}/FFFFFF?text=Folding+Laundry`}
+                src={`https://cdn.pixabay.com/photo/2017/09/22/07/28/home-2774669_640.jpg`}
                 alt="A person folding laundry."
                 width={600} // Explicit width
                 height={400} // Explicit height
@@ -240,6 +208,4 @@ const AddonsPage = () => {
       <div className="h-2 bg-primary-purple max-w-7xl mx-auto mb-16 rounded-full"></div>
     </div>
   );
-};
-
-export default AddonsPage;
+}
