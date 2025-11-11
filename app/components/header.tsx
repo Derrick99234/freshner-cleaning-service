@@ -106,7 +106,7 @@ export default function Header() {
               className="text-3xl font-bold tracking-tight"
               style={logoStyle}
             >
-              FRESHER
+              FRESHNER
             </span>
             <span
               className="text-xl font-medium tracking-wide -mt-1"
