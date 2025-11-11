@@ -2,6 +2,7 @@
 import React from "react";
 import { Mail, Zap } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define the primary color used throughout the component for the theme
 const PRIMARY_PURPLE = "#6B46C1"; // Tailwind's purple-700 is close to the theme color
@@ -27,13 +28,14 @@ const CarpetCleaningPage: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mt-2 mb-6">
             Carpet Cleaning
           </h1>
-          <button
-            className="py-3 px-8 text-white font-semibold rounded-lg shadow-lg transition duration-300 hover:opacity-90 transform hover:scale-[1.005] focus:outline-none focus:ring-4 focus:ring-purple-500 focus:ring-opacity-50"
+          <Link
+            href="/book-a-cleaning"
+            className="py-3 px-8 text-white font-semibold inline-block rounded-lg shadow-lg transition duration-300 hover:opacity-90 transform hover:scale-[1.005] focus:outline-none focus:ring-4 focus:ring-purple-500 focus:ring-opacity-50"
             style={{ backgroundColor: PRIMARY_PURPLE }}
             onClick={() => console.log("Book A Cleaning clicked from Hero")}
           >
             Book A Cleaning
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -74,14 +76,15 @@ const CarpetCleaningPage: React.FC = () => {
             </div>
 
             {/* Bottom Button */}
-            <button
+            <Link
+              href="/book-a-cleaning"
               className="mt-6 border-2 border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white font-bold py-3 px-8 rounded-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-500 focus:ring-opacity-50"
               onClick={() =>
                 console.log("Book A Cleaning clicked from Content")
               }
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
 
           {/* Image Column */}
@@ -103,13 +106,14 @@ const CarpetCleaningPage: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-semibold text-gray-700 mb-6">
             If you require anything else – Just ask!
           </h3>
-          <button
+          <Link
+            href="/contact"
             className="border-2 border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50"
             onClick={() => console.log("Contact Us clicked")}
           >
             <Mail className="w-5 h-5 mr-2" />
             Contact Us
-          </button>
+          </Link>
         </div>
       </section>
 

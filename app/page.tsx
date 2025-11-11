@@ -6,6 +6,7 @@ import {
   HandHeart,
   Award,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const PRIMARY_PURPLE = "#6F42C1";
@@ -62,10 +63,10 @@ export default function Home() {
         className="fixed top-0 left-0 w-full -z-10 h-full"
       ></div>
       <section
-        className="w-full bg-gray-50 overflow-hidden relative shadow-lg"
+        className="w-full overflow-hidden relative shadow-lg bg-black"
         style={{
           // Use a subtle background image with a strong overlay to focus on the text
-          backgroundImage: `linear-gradient(to bottom, rgba(249, 249, 251, 0.95) 0%, rgba(249, 249, 251, 0.9) 30%, rgba(249, 249, 251, 0.5) 100%), url(${"https://cdn.pixabay.com/photo/2021/06/04/17/10/broom-6310388_1280.jpg"})`,
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(249, 249, 251, 0.5) 100%), url(${"https://cdn.pixabay.com/photo/2021/06/04/17/10/broom-6310388_1280.jpg"})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -80,14 +81,15 @@ export default function Home() {
           </h1>
 
           {/* Tagline */}
-          <p className="mt-2 text-xl md:text-2xl font-light text-gray-700">
-            For the Love of Cleanliness
+          <p className="mt-2 text-xl md:text-2xl font-light text-white">
+            Sparkling home, Peaceful hearts
           </p>
 
           {/* Call to Action Buttons */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             {/* Primary Button: Our Services (Solid Purple) */}
-            <button
+            <Link
+              href="/house-cleaning"
               className="py-3 px-8 text-white font-semibold rounded-lg shadow-xl transition duration-300 hover:opacity-90 transform hover:scale-[1.01]"
               style={{
                 backgroundColor: PRIMARY_PURPLE,
@@ -95,10 +97,11 @@ export default function Home() {
               }}
             >
               Our Services
-            </button>
+            </Link>
 
             {/* Secondary Button: Book A Cleaning (Outline) */}
-            <button
+            <Link
+              href="/book-a-cleaning"
               className="py-3 px-8 text-sm font-semibold rounded-lg transition duration-300 hover:bg-purple-50 transform hover:scale-[1.01] bg-white"
               style={{
                 color: PRIMARY_PURPLE,
@@ -108,7 +111,7 @@ export default function Home() {
               }}
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -195,7 +198,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-[50vh]"></section>
+      <section className="h-[50vh] bg-black opacity-60"></section>
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Section Title */}
@@ -239,7 +242,7 @@ export default function Home() {
               className="text-3xl sm:text-4xl font-semibold text-gray-800 mb-2"
               style={{ color: PRIMARY_PURPLE }}
             >
-              Top 5 Reasons People Choose Fresh:
+              Top 5 Reasons People Choose Freshner Cleaning Service:
             </h2>
             <div
               className="w-1/4 h-1 mx-auto rounded-full"
@@ -268,7 +271,8 @@ export default function Home() {
 
           {/* Bottom Call to Action */}
           <div className="mt-16 flex justify-center">
-            <button
+            <Link
+              href={"/house-cleaning"}
               className="py-3 px-8 text-sm font-semibold rounded-lg transition duration-300 hover:bg-purple-50 transform hover:scale-[1.02] bg-white border-2"
               style={{
                 color: PRIMARY_PURPLE,
@@ -277,7 +281,7 @@ export default function Home() {
               }}
             >
               BOOK OUR SERVICES
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,12 @@
-import { ChevronUp, HandHeart, Phone } from "lucide-react";
+import {
+  ChevronUp,
+  HandHeart,
+  MessageCircleDashed,
+  MessageSquareDashed,
+  MessageSquareText,
+  Phone,
+} from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -19,22 +27,34 @@ function Footer() {
                 style={{ color: PRIMARY_PURPLE }}
               />
               <p
-                className="text-xl font-bold tracking-wider"
+                className="text-2xl font-bold tracking-wider"
                 style={{ color: PRIMARY_PURPLE }}
               >
                 Freshner Cleaning Service
               </p>
             </div>
             <p className="text-gray-400 mb-2">
-              The only maid service you&apos;ll ever need.
+              The only cleaning services you will ever need.
             </p>
 
-            <div className="flex items-center justify-center md:justify-start mt-4">
+            <Link
+              href="tel:+15876649766"
+              className="flex items-center justify-center md:justify-start mt-4"
+            >
               <Phone className="w-4 h-4 mr-2 text-gray-400" />
               <span className="text-lg font-semibold text-gray-300">
-                587 664 9766
+                +1 (587) 664-9766
               </span>
-            </div>
+            </Link>
+            <Link
+              href="mailto:freshnercleaningservices@gmail.com"
+              className="flex items-center justify-center md:justify-start mt-4"
+            >
+              <MessageSquareText className="w-4 h-4 mr-2 text-gray-400" />
+              <span className="text-lg font-semibold text-gray-300">
+                Freshnercleaningservices@gmail.com
+              </span>
+            </Link>
           </div>
 
           {/* Right: Book Service CTA */}
@@ -42,7 +62,8 @@ function Footer() {
             <p className="text-lg font-medium mb-4 text-gray-200">
               Interested in Our Service?
             </p>
-            <button
+            <Link
+              href="/book-a-cleaning"
               className="py-3 px-6 text-white font-semibold rounded-lg shadow-xl transition duration-300 hover:opacity-90 transform hover:scale-[1.02]"
               style={{
                 backgroundColor: PRIMARY_PURPLE,
@@ -50,14 +71,14 @@ function Footer() {
               }}
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* Bottom Row: Copyright and Scroll to Top Button */}
         <div className="flex justify-between items-center pt-4">
           <p className="text-sm text-gray-500">
-            Copyright &copy; {new Date().getFullYear()} FRESHER CLEANING
+            Copyright &copy; {new Date().getFullYear()} FRESHNER CLEANING
             SERVICE. All Rights Reserved.
           </p>
 

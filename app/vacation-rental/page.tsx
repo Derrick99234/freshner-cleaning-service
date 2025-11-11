@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 // --- Constants ---
@@ -55,12 +56,13 @@ const EstimateCTA = () => {
               Freshner Cleaning Service will provide you an ease and affordable
               price
             </p>
-            <button
+            <Link
+              href="/book-a-cleaning"
               className="py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
               style={{ backgroundColor: PRIMARY_PURPLE }}
             >
               House Cleaning Estimate
-            </button>
+            </Link>
           </div>
 
           {/* Right Column: Image (using simulated Next.js Image component) */}
@@ -163,12 +165,13 @@ export default function VacationRentalCleaningPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               Vacation Rental
             </h1>
-            <button
-              className="mt-6 py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
+            <Link
+              href="/book-a-cleaning"
+              className="mt-6 py-3 px-6 inline-block text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
               style={{ backgroundColor: PRIMARY_PURPLE }}
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -189,9 +192,12 @@ export default function VacationRentalCleaningPage() {
                 two to efficiently deliver cleaning services and maid services
                 for your vacation rental cleaning services.
               </p>
-              <button className="py-3 px-6 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500">
+              <Link
+                href="/book-a-cleaning"
+                className="py-3 px-6 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500"
+              >
                 Book A Cleaning
-              </button>
+              </Link>
             </div>
 
             {/* Image (using simulated Next.js Image component) */}

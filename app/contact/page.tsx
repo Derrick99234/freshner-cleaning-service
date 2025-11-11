@@ -110,7 +110,7 @@ export default function Contact() {
         }}
         className="fixed top-0 left-0 w-full -z-10 h-full"
       ></div>
-      <section className="h-[50vh] flex items-center w-full bg-black opacity-60 px-20">
+      <section className="h-[50vh] flex items-center w-full bg-black opacity-60 px-16">
         <h2 className="text-white text-4xl font-semibold">Contact Us</h2>
       </section>
       <div className="w-full bg-white">

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // The 'next/image' import has been removed to resolve the build error.
 
 // Define the custom colors used in the original design for clarity
@@ -63,12 +64,13 @@ export default function AddonsPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
             Add ons and Special request
           </h1>
-          <button
-            className="mt-6 py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
+          <Link
+            href="/book-a-cleaning"
+            className="mt-6 inline-block py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
             style={{ backgroundColor: PRIMARY_PURPLE }}
           >
             Book A Cleaning
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -135,9 +137,12 @@ export default function AddonsPage() {
             </ul>
 
             <div className="mt-10 text-center">
-              <button className="px-8 py-3 bg-primary-purple text-white font-semibold rounded shadow-lg hover:opacity-90 transition button-shadow">
+              <Link
+                href="/book-a-cleaning"
+                className="px-8 py-3 bg-primary-purple text-black border font-semibold rounded shadow-lg hover:opacity-90 transition button-shadow"
+              >
                 Book A Cleaning
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -196,16 +201,19 @@ export default function AddonsPage() {
                 </p>
               </div>
 
-              <button className="mt-8 px-6 py-3 border border-primary-purple text-primary-purple font-semibold rounded hover:bg-primary-purple hover:text-white transition w-full md:w-auto">
+              <Link
+                href="/book-a-cleaning"
+                className="mt-8 inline-block px-6 py-3 border border-primary-purple text-black font-semibold rounded hover:bg-black hover:text-white transition w-full md:w-auto"
+              >
                 Book A Cleaning
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Bottom Separator */}
-      <div className="h-2 bg-primary-purple max-w-7xl mx-auto mb-16 rounded-full"></div>
+      {/* <div className="h-2 bg-primary-purple max-w-7xl mx-auto mb-16 rounded-full"></div> */}
     </div>
   );
 }

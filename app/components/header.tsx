@@ -114,12 +114,12 @@ export default function Header() {
             >
               CLEANING SERVICE
             </span>
-            <span
+            {/* <span
               className="text-xs italic font-normal tracking-wider mt-1"
               style={logoStyle}
             >
               Experience the Fresh Difference
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Navigation (Hidden on Mobile) */}

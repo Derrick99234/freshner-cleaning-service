@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 // --- Constants ---
@@ -64,12 +65,13 @@ export default function MoveInMoveOutPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               Move out and Move in Cleaning Service
             </h1>
-            <button
-              className="mt-6 py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
+            <Link
+              href="/book-a-cleaning"
+              className="mt-6 py-3 px-6 inline-block text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
               style={{ backgroundColor: PRIMARY_PURPLE }}
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -105,9 +107,12 @@ export default function MoveInMoveOutPage() {
                 cleaning.
               </p>
 
-              <button className="py-3 px-6 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500">
+              <Link
+                href="/book-a-cleaning"
+                className="py-3 px-6 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500"
+              >
                 Book A Cleaning
-              </button>
+              </Link>
             </div>
 
             {/* Right Column: Image */}
@@ -131,12 +136,13 @@ export default function MoveInMoveOutPage() {
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
             If you require anything else – Just ask!
           </h2>
-          <button
+          <Link
+            href="/contact"
             className="py-3 px-8 text-gray-800 font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005] border-2 border-gray-400"
             style={{ backgroundColor: "#F9F9F9" }} // Light color for contrast
           >
             Contact Us
-          </button>
+          </Link>
         </div>
       </main>
     </div>

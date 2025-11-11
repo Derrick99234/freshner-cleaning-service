@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 // Define the custom primary color for the Freshner Cleaning Service brand
@@ -25,7 +26,9 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({
     : `border-2 border-[${PRIMARY_PURPLE}] text-[${PRIMARY_PURPLE}] px-6 py-3 hover:bg-gray-50`;
 
   return (
-    <button className={`${baseClasses} ${styleClasses}`}>{children}</button>
+    <Link href="/book-a-cleaning" className={`${baseClasses} ${styleClasses}`}>
+      {children}
+    </Link>
   );
 };
 
@@ -50,12 +53,13 @@ const MaidServices: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
             Maid Services
           </h1>
-          <button
-            className="mt-6 py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
+          <Link
+            href="/book-a-cleaning"
+            className="mt-6 py-3 px-6 inline-block text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
             style={{ backgroundColor: PRIMARY_PURPLE }}
           >
             Book A Cleaning
-          </button>
+          </Link>
         </div>
       </div>
 

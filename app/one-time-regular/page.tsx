@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // --- Constants ---
 const PRIMARY_PURPLE = "#6F42C1";
@@ -41,9 +42,12 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({
       <div className={textClasses}>
         <h3 className="text-2xl font-bold text-gray-800 mb-4">{title}</h3>
         <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
-        <button className="py-3 px-6 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500">
+        <Link
+          href="/book-a-cleaning"
+          className="py-3 px-6 inline-block text-gray-700 font-semibold border-2 border-gray-300 rounded-lg transition duration-300 hover:bg-gray-50 hover:border-purple-500"
+        >
           Book A Cleaning
-        </button>
+        </Link>
       </div>
 
       {/* Image */}
@@ -133,12 +137,13 @@ export default function CompleteHouseCleaningPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 mt-2">
               Complete House Cleaning
             </h1>
-            <button
-              className="mt-6 py-3 px-6 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
+            <Link
+              href="/book-a-cleaning"
+              className="mt-6 py-3 px-6 inline-block text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform hover:scale-[1.005]"
               style={{ backgroundColor: PRIMARY_PURPLE }}
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
         </div>
 

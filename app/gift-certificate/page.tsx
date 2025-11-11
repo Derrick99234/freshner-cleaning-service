@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Gift } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define the primary color used throughout the component for the theme
 const PRIMARY_PURPLE = "#6B46C1"; // Tailwind's purple-700
@@ -55,13 +56,14 @@ const GiftCertificatePage: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mt-2 mb-6">
             Gift Certificate
           </h1>
-          <button
+          <Link
+            href="/book-a-cleaning"
             className="py-3 px-8 text-white font-semibold rounded-lg shadow-lg transition duration-300 hover:opacity-90 transform hover:scale-[1.005] focus:outline-none focus:ring-4 focus:ring-purple-500 focus:ring-opacity-50"
             style={{ backgroundColor: PRIMARY_PURPLE }}
             onClick={handleBookClick}
           >
             Book A Cleaning
-          </button>
+          </Link>
         </div>
       </div>
 

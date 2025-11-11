@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContentBlock() {
   // Placeholder image for the maid/cleaning setup
@@ -33,8 +34,9 @@ export default function ContentBlock() {
             </p>
 
             {/* Call to Action Button - White/Outline style as seen in the image */}
-            <button
-              className="py-3 px-6 text-sm font-semibold rounded-lg transition duration-200 mt-6"
+            <Link
+              href="/book-a-cleaning"
+              className="py-3 px-6 text-sm font-semibold inline-block rounded-lg transition duration-200 mt-6"
               style={{
                 color: PRIMARY_PURPLE,
                 borderColor: PRIMARY_PURPLE,
@@ -44,7 +46,7 @@ export default function ContentBlock() {
               }}
             >
               Book A Cleaning
-            </button>
+            </Link>
           </div>
 
           {/* Right Column: Image */}
