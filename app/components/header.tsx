@@ -53,14 +53,17 @@ const NAV_LINKS: NavItem[] = [
     name: "Our Services",
     href: "#services",
     dropdown: [
-      { name: "House Cleaning", href: "#house-cleaning" },
-      { name: "Move In/Move Out", href: "#move-in-out" },
-      { name: "One Time/Regular", href: "#one-time" },
-      { name: "Vacation Rental", href: "#vacation-rental" },
-      { name: "Add Ons and Special Request", href: "#addons" },
-      { name: "Maid Services", href: "#maid-services" },
-      { name: "Carpet Cleaning", href: "#carpet-cleaning" },
-      { name: "Gift Certificate", href: "#gift-certificate" },
+      { name: "House Cleaning", href: "/house-cleaning" },
+      { name: "Move In/Move Out", href: "/move-in-move-out" },
+      { name: "One Time/Regular", href: "/one-time-regular" },
+      { name: "Vacation Rental", href: "/vacation-rental" },
+      {
+        name: "Add Ons and Special Request",
+        href: "/add-ons-and-special-request",
+      },
+      { name: "Maid Services", href: "/maid-services" },
+      { name: "Carpet Cleaning", href: "/carpet-cleaning" },
+      { name: "Gift Certificate", href: "/gift-certificate" },
     ],
   },
   { name: "Book A Cleaning", href: "/book-a-cleaning" },
@@ -130,11 +133,7 @@ export default function Header() {
               >
                 <a
                   href={link.href}
-                  className={`py-6 px-1 transition duration-150 hover:text-purple-700 ${
-                    link.name === "Our Services"
-                      ? "text-purple-700 border-b-2 border-purple-600" // Active/Dropdown styling
-                      : ""
-                  }`}
+                  className={`py-6 px-1 transition duration-150 hover:text-purple-700 `}
                 >
                   {link.name}
                 </a>
