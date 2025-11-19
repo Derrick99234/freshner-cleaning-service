@@ -47,7 +47,7 @@ export default function Home() {
       icon: Award,
       title: "Certified Maids",
       description:
-        "Fresh screens, trains, and certifies all our maids for your peace of mind.",
+        "Every maid is professionally trained, certified, and police-checked, providing you with confidence and peace of mind.",
     },
   ];
 
@@ -74,8 +74,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative z-10 flex flex-col items-center text-center">
           {/* Branding/Logo Text */}
           <h1
-            className="text-4xl md:text-5xl font-extrabold tracking-tight"
-            style={{ color: PRIMARY_PURPLE }}
+            className="text-4xl md:text-5xl font-extrabold tracking-tight text-white"
+            // style={{ color: PRIMARY_PURPLE }}
           >
             FRESHNER CLEANING SERVICES
           </h1>
