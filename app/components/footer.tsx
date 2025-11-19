@@ -23,12 +23,12 @@ function Footer() {
           <div className="text-center md:text-left mb-6 md:mb-0">
             <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
               <HandHeart
-                className="w-6 h-6"
-                style={{ color: PRIMARY_PURPLE }}
+                className="w-6 h-6 text-white"
+                // style={{ color: PRIMARY_PURPLE }}
               />
               <p
-                className="text-2xl font-bold tracking-wider"
-                style={{ color: PRIMARY_PURPLE }}
+                className="text-2xl font-bold tracking-wider text-white"
+                // style={{ color: PRIMARY_PURPLE }}
               >
                 Freshner Cleaning Service
               </p>
